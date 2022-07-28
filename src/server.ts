@@ -40,8 +40,8 @@ app.use("/route", failingroute) // no more zoomerd routes here
 // app.use("/route", function)
 
 // Special routes go here
-app.get("*", notfound) // <= this is a 404 handler (not found) for everyroute that doesn't exist
-app.use(errorhandler) // <= this is an error handler
+// app.get("*", notfound) // <= this is a 404 handler (not found) for everyroute that doesn't exist
+// app.use(errorhandler) // <= this is an error handler
 // === End of all middlewares ===
 
 mongoose.connect(uri, () => console.log("🍃 Successfully Connected to MongoDB"))

@@ -3,6 +3,16 @@
     "version": "1.0.0",
     "description": "Tired of having to setup your BE server? Here's a boilerplate with express, mongoose typescript and jest for TDD",
     "main": "index.js",
+    "jest":{
+        "preset": "ts-jest",
+        "testEnvironment": "node",
+        "transform":{
+            "node_modules/variables/.+\\.(j|t)sx?$": "ts-jest"
+        },
+        "transformIgnorePatterns": [
+            "node_modules/(?!variables/.*)"]
+    },
+    
     "directories": {
         "lib": "lib"
     },
